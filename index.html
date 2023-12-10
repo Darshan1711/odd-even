@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check Odd or Even number</h1>
+    Enter a number: <input type="text" id="first">
+    <button onclick="hood()">Press</button>
+    <p id="second"></p>
+    <script>
+
+        function hood(){ 
+            var num = document.getElementById("first").value;
+            if(num%2==0){
+                second = `${num} is Even number `;
+            }else{
+                second = `${num} is odd number `;
+            }
+
+            document.getElementById("second").innerHTML = second;
+            
+            
+        }
+        </script>
+</body>
+</html>
